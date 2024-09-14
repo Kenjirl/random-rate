@@ -1,6 +1,6 @@
 <p align="center">
     <a href="" rel="noopener">
-    <img width=100px height=100px style="border-radius: 100%;" src="./public/R.png" alt=""></a>
+    <img width=100px height=100px style="border-radius: 100%;" src="./R.png" alt="Logo"></a>
 </p>
 
 # <h3 align="center">Random Rate</h3>
@@ -12,7 +12,7 @@
     <br> 
 </p>
 
-<img style="width: 100%; aspect-ratio: 16/9; object-fit: cover;" src="./public/cover.png" alt=""></a>
+<img style="width: 100%; aspect-ratio: 16/9; object-fit: cover;" src="./cover.png" alt="Screenshot"></a>
 
 ##  Rate List
 
@@ -30,5 +30,6 @@
 
 - Instant Noodle
   - Indomie
+  - Sedaap
 
 Many more to go!
