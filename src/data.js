@@ -1,6 +1,15 @@
 let data = {
     'instant-noodles': {
-        'sedaap': [],
+        'sedaap': [
+            {
+                'nama': 'kari-ayam',
+                'rate': 'C',
+                'img_format': 'png',
+                'note': [
+                    'basic'
+                ]
+            },
+        ],
         'indomie': [
             {
                 'nama': 'ayam-bawang',

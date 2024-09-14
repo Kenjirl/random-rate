@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Modal from './modal.js';
 import color_rate from '../color-rate.js';
 import anime from 'animejs';
@@ -11,17 +11,16 @@ export default function Rate({ jenis, produk, data }) {
 
     const productRefs = useRef([]);
 
-    let products = data[jenis]?.[produk];
-
-    if (products.length > 0) {
-        products.sort((a, b) => {
+    const products = useMemo(() => {
+        const items = data[jenis]?.[produk] || [];
+        return items.sort((a, b) => {
             if (a.rate < b.rate) return -1;
             if (a.rate > b.rate) return 1;
             if (a.nama.toLowerCase() < b.nama.toLowerCase()) return -1;
             if (a.nama.toLowerCase() > b.nama.toLowerCase()) return 1;
             return 0;
         });
-    }
+    }, [jenis, produk, data]);
 
     const handleShowModal = (item, color, index) => {
         setModalData(item);
@@ -33,7 +32,7 @@ export default function Rate({ jenis, produk, data }) {
     useEffect(() => {
         if (products.length > 0 && productRefs.current.length > 0) {
             anime({
-                targets: productRefs.current,
+                targets: productRefs.current.filter(Boolean),
                 translateX: [-50, 0],
                 opacity: [0, 1],
                 duration: 1000,
