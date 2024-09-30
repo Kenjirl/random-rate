@@ -28,6 +28,8 @@
 
 ## Things I've rated so far
 
+- Can Coffee
+  - Nescafe
 - Instant Noodle
   - Indomie
   - Sedaap

@@ -9,6 +9,22 @@ let data = {
                     'basic'
                 ]
             },
+            {
+                'nama': 'ayam-bawang',
+                'rate': 'B',
+                'img_format': 'png',
+                'note': [
+                    '...'
+                ]
+            },
+            {
+                'nama': 'baso-spesial',
+                'rate': 'A',
+                'img_format': 'png',
+                'note': [
+                    '...'
+                ]
+            },
         ],
         'indomie': [
             {
@@ -67,11 +83,31 @@ let data = {
                     "kind of an original taste"
                 ]
             },
+            {
+                'nama': 'soto-lamongan',
+                'rate': 'B',
+                'img_format': 'png',
+                'note': [
+                    "..."
+                ]
+            },
         ]
     }, 
     'milk': {
         'indomilk': [],
-    }
+    },
+    'can-coffee': {
+        'nescafe': [
+            {
+                'nama': 'latte',
+                'rate': 'B',
+                'img_format': 'png',
+                'note': [
+                    "..."
+                ]
+            },
+        ],
+    },
 };
 
 export default data;
